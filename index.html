@@ -293,13 +293,70 @@
       </section>
 
       <section id="demo">
+
       <style type="text/css">
-      #demo iframe.video {
-        width: 500px;
-        height: 300px;
-        }</style>
-        <h2>Demo</h2>
-        <iframe id="screen" class="video" src="https://player.vimeo.com/video/106808139?autoplay" frameborder="0" width="200px" height=webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        #demo .checks li {
+          list-style: none;
+        }
+
+        .green-checkmark {
+            font-size: 30px;
+            color: #37812C;
+        }
+
+        .red-checkmark {
+            color: #e00000;
+        }
+      </style>
+
+      <h3>Apply hardening in seconds</h3>
+        <table>
+          <tr>
+          <th style="text-align: center;">Before</th>
+          <th style="text-align: center;">Apply</th>
+          <th style="text-align: center;">After</th>
+          </tr>
+          <tr>
+          <td><img src="images/apply-01.png"></td>
+          <td><img src="images/apply-02.png"></td>
+          <td><img src="images/apply-03.png"></td>
+          </tr>
+          <tr style="font-size: 18px;">
+          <td>
+            <ul class="checks">
+              <li><span class="red-checkmark">✗</span> Securing default configuration</li>
+              <li><span class="red-checkmark">✗</span> Reducing attack surface</li>
+              <li><span class="red-checkmark">✗</span> Fullfill compliance</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Automatic deployment</li>
+              <li>Works on bare-metal</li>
+              <li>Works on cloud infrastructures</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="checks">
+              <li><span class="green-checkmark">✓</span> Securing default configuration</li>
+              <li><span class="green-checkmark">✓</span> Reducing attack surface</li>
+              <li><span class="green-checkmark">✓</span> Fullfill compliance</li>
+            </ul>
+          </td>
+          </tr>
+        </table>
+
+        <p style="margin-top:40px;"><a href="https://vimeo.com/106808139">Full demonstration is available at Vimeo</a></p>
+
+        <!--
+          <style type="text/css">
+          #demo iframe.video {
+            width: 500px;
+            height: 300px;
+            }</style>
+            <h2>Demo</h2>
+            <iframe id="screen" class="video" src="https://player.vimeo.com/video/106808139?autoplay=true" frameborder="0" width="200px" height=webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        -->
       </section>
 
       <section id="ingredients" data-background="images/spice-370114_640_darken.jpg">
